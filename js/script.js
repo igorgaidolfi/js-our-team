@@ -27,11 +27,11 @@ let team = [
     {
         name: "Barbara Ramos",
         role: "Graphic Designer",
-        image: "barbara-ramos-graphic-designer.jpgs"
+        image: "barbara-ramos-graphic-designer.jpg"
     },
 ]
     for(let i=0;i<team.length;i++){
+        document.getElementById('member').innerHTML += `<li><img src="./img/${team[i].image}"></li>`
         document.getElementById('member').innerHTML += `<li>${team[i].role}</li>`
         document.getElementById('member').innerHTML += `<li>${team[i].name}</li>`
-        document.getElementById('member').innerHTML += `<li>${team[i].image}</li>`
     }
